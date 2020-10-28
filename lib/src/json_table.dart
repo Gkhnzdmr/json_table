@@ -30,7 +30,7 @@ class JsonTable extends StatefulWidget {
     this.columns,
     this.showColumnToggle = false,
     this.allowRowHighlight = false,
-    this.filterTitle = 'ADD FILTERS',
+    this.filterTitle = 'Sütun Çıkart',
     this.rowHighlightColor,
     this.paginationRowCount,
     this.onRowSelect,
@@ -198,7 +198,8 @@ class _JsonTableState extends State<JsonTable> {
     if (widget.columns != null) {
       widget.columns.forEach((item) {
         headers.add(item.field);
-        this.headerLabels[item.field] = item.label == null ? item.field : item.label;
+        this.headerLabels[item.field] =
+            item.label == null ? item.field : item.label;
       });
     } else {
       widget.dataList.forEach((map) {
