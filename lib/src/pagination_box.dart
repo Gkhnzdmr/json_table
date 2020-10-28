@@ -38,7 +38,7 @@ class PaginationBox extends StatelessWidget {
             flex: 1,
             fit: FlexFit.tight,
             child: Text(
-              " $pagesCount Sayfa içerisinden ${pageIndex + 1} sayfa",
+              " $pagesCount Sayfa içerisinden ${pageIndex + 1}. sayfa",
               textAlign: TextAlign.center,
             ),
           ),
